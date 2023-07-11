@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  font-family: roboto;
 }
 
 .container {
@@ -13,22 +16,73 @@
     "sidebar content";
 }
 
+/* SIDEBAR */
+
 .sidebar {
   grid-area: sidebar;
   background-color: #1992d3;
-  display: grid;
+  padding: 1.5rem;
+}
+
+.sidebar .dashboard-title {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: bold;
 }
 
 .sidebar .menu li {
+  font-size: 1.3rem;
   color: white;
+  list-style-type: none;
 }
+
+/* HEADER */
 
 .header {
   grid-area: header;
-  display: grid;
 }
+
+.top {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* SEARCHBAR */
+
+.search-field {
+  display: flex;
+  gap: 1rem;
+}
+
+.search-icon {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  border: 0;
+  background-color: #e7e5e4;
+  padding: 0.75em 2em;
+  outline-color: #084c61;
+  border-radius: 99em;
+  width: max(80%, 700px);
+}
+
+.profile-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.profile-panel {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* CONTENT */
 
 .content {
   grid-area: content;
-  display: grid;
 }

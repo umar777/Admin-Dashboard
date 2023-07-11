@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
     <div class="container">
@@ -24,20 +28,34 @@
       </div>
 
       <div class="header">
-        <div class="search-field">
-          <div class="search-icon"></div>
-          <div class="searchbar"></div>
-          <div class="bell-icon"></div>
-          <div class="profile-icon"></div>
-          <div class="profile-name">Omar Farooqui</div>
+        <div class="top">
+          <div class="search-field">
+            <label class="search-icon" for="search-bar">
+              <span class="material-symbols-outlined"> search </span>
+            </label>
+            <input type="text" class="search-bar" placeholder="Search..." />
+          </div>
+          <div class="profile-nav">
+            <span class="bell-icon material-symbols-outlined">
+              notifications
+            </span>
+            <span class="profile-icon material-symbols-outlined">
+              account_circle
+            </span>
+            <span class="profile-name">Omar Farooqui</span>
+          </div>
         </div>
         <div class="profile-panel">
-          <div class="profile-panel-icon"></div>
-          <div class="hi-text">Hi there,</div>
-          <div class="profile-panel-name">Omar Farooqui (@omarfarooqui)</div>
-          <button class="new">New</button>
-          <button class="upload">Upload</button>
-          <button class="share">Share</button>
+          <div class="profile-bar">
+            <div class="profile-panel-icon"></div>
+            <div class="hi-text">Hi there,</div>
+            <div class="profile-panel-name">Omar Farooqui (@omarfarooqui)</div>
+          </div>
+          <div class="btns">
+            <button class="new">New</button>
+            <button class="upload">Upload</button>
+            <button class="share">Share</button>
+          </div>
         </div>
       </div>
 
